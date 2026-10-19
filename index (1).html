@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TACTICAL TEAM</title>
+<meta name="description" content="TACTICAL TEAM — музыка, видеомонтажи и визуальные работы. Автор: Чудной.">
+<meta name="theme-color" content="#090909">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top" id="top">
+  <a class="logo-container" href="#home" aria-label="TACTICAL TEAM — на главную">
+    <img src="assets/logo.png" alt="TACTICAL TEAM" width="220" height="72" data-logo>
+  </a>
+  <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  <nav id="nav">
+    <a href="#about">О команде</a><a href="#members">Участники</a><a href="#works">Работы</a><a href="#music">Музыка</a><a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="logo-container logo-hero"><img src="assets/logo.png" alt="" width="220" height="72" data-logo></div>
+    <h1><span>TACTICAL</span><span class="outline">TEAM</span></h1>
+    <p class="slogan">Свой звук. Свой кадр. Свой почерк.</p>
+    <p class="lead">Творческое объединение: авторская музыка, видеомонтажи и визуальное оформление. Здесь собраны треки, работы и люди, которые их делают.</p>
+    <div class="btns"><a class="btn primary" href="#works">Смотреть работы</a><a class="btn" href="#music">Слушать музыку</a></div>
+  </div>
+</section>
+
+<section id="about" class="sec">
+  <h2>О команде</h2>
+  <div class="about-grid">
+    <p class="big reveal">TACTICAL TEAM — это не студия и не лейбл, а общий стиль. Его собирают звук, монтаж и картинка, которые делают одни и те же люди.</p>
+    <div class="about-cols reveal">
+      <article><h3>Чем занимаемся</h3><p>Пишем авторские треки, монтируем видео, оформляем медиа. Каждое направление питает остальные.</p></article>
+      <article><h3>Откуда стиль</h3><p>Музыка задаёт ритм, монтаж — темп, визуал — настроение. Поэтому всё, что мы выпускаем, узнаётся с первого кадра.</p></article>
+      <article><h3>Как рождаются проекты</h3><p>Идея, набросок, обсуждение внутри команды, затем релиз. Новые работы появляются в разделах ниже.</p></article>
+      <article><h3>Люди</h3><p>У каждого участника своё творчество и свои проекты. Мы развиваем их вместе, как сообщество.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="members" class="sec">
+  <h2>Участники</h2>
+  <ol class="members" id="memberList"></ol>
+</section>
+
+<section id="works" class="sec">
+  <h2>Работы и проекты</h2>
+  <div class="filters" id="filters" role="tablist" aria-label="Категории"></div>
+  <div class="works" id="workList"></div>
+</section>
+
+<section id="music" class="sec">
+  <h2>Музыка</h2>
+  <p class="sub">Автор треков: Чудной / chudnoy</p>
+  <div class="tracks" id="trackList"></div>
+</section>
+
+<section id="contacts" class="sec contact">
+  <h2>Связаться</h2>
+  <p class="big">Есть идея, вопрос или предложение? Напишите Чудному в Telegram.</p>
+  <a class="btn primary" href="https://t.me/BELARUSIAN_MUSICIANS" target="_blank" rel="noopener">Написать в Telegram</a>
+</section>
+</main>
+
+<footer>
+  <div class="logo-container logo-foot"><img src="assets/logo.png" alt="TACTICAL TEAM" width="220" height="72" data-logo></div>
+  <nav><a href="#about">О команде</a><a href="#members">Участники</a><a href="#works">Работы</a><a href="#music">Музыка</a><a href="https://t.me/BELARUSIAN_MUSICIANS" target="_blank" rel="noopener">Telegram</a></nav>
+  <small>© <span id="year"></span> TACTICAL TEAM</small>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
